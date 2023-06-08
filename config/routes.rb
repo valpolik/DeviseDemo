@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
 
   root to: 'pages#index'
-  resources :user_registration
+  # resources :user_registration
 end
