@@ -137,6 +137,7 @@ Devise.setup do |config|
   # Default is nil, meaning there is no restriction on how long a user can take
   # before confirming their account.
   # config.confirm_within = 3.days
+  config.confirm_within = 3.days
 
   # If true, requires any email changes to be confirmed (exactly the same way as
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
@@ -180,6 +181,7 @@ Devise.setup do |config|
   # :failed_attempts = Locks an account after a number of failed attempts to sign in.
   # :none            = No lock strategy. You should handle locking by yourself.
   # config.lock_strategy = :failed_attempts
+  config.lock_strategy = :failed_attempts
 
   # Defines which key will be used when locking and unlocking an account
   # config.unlock_keys = [:email]
@@ -190,16 +192,20 @@ Devise.setup do |config|
   # :both  = Enables both strategies
   # :none  = No unlock strategy. You should handle unlocking by yourself.
   # config.unlock_strategy = :both
+  config.unlock_strategy = :both
 
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
   # config.maximum_attempts = 20
+  config.maximum_attempts = 5
 
   # Time interval to unlock the account if :time is enabled as unlock_strategy.
   # config.unlock_in = 1.hour
+  config.unlock_in = 5.minutes
 
   # Warn on the last attempt before the account is locked.
   # config.last_attempt_warning = true
+  config.last_attempt_warning = true
 
   # ==> Configuration for :recoverable
   #
