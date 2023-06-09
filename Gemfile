@@ -63,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # gem 'devise', '3.4.1'
 gem 'devise', '4.4.2'
 gem 'bootstrap-sass'
+# gem 'bootstrap-sass', '3.3.6'
+gem 'jquery-turbolinks'
+# gem 'jquery'
